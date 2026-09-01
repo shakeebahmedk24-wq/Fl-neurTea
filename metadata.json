@@ -1,0 +1,7 @@
+{
+  "name": "Flâneur Tea",
+  "description": "Artisanal garden tea house, specialty coffee, and handcrafted brunch in Sathorn, Bangkok.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
