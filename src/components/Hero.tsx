@@ -148,26 +148,26 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-lg mx-auto"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full mx-auto"
         >
           {/* Direct Reserve Button */}
           <button
             id="hero-book-cta"
             onClick={() => openBookingModal('book-table')}
-            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#C79D60] hover:bg-[#D6AC71] text-[#18261F] font-bold text-sm tracking-wide shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
+            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-[#C79D60] hover:bg-[#D6AC71] text-[#18261F] font-bold text-sm tracking-wide shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 whitespace-nowrap active:scale-95"
           >
-            <Calendar className="w-4 h-4" />
-            <span>Book Table / High Tea (฿680)</span>
+            <Calendar className="w-4 h-4 shrink-0" />
+            <span className="whitespace-nowrap">Book Table / High Tea (฿680)</span>
           </button>
 
           {/* Scroll to Menu CTA */}
           <a
             id="hero-menu-cta"
             href="#menu"
-            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-white/15 hover:bg-white/25 text-[#FAF7F2] font-semibold text-sm tracking-wide border border-white/30 backdrop-blur-md transition-all shadow-md"
+            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full bg-white/15 hover:bg-white/25 text-[#FAF7F2] font-semibold text-sm tracking-wide border border-white/30 backdrop-blur-md transition-all shadow-md whitespace-nowrap active:scale-95"
           >
-            <span>Explore Menu & Pricing</span>
-            <ArrowRight className="w-4 h-4 text-[#FAF7F2]" />
+            <span className="whitespace-nowrap">Explore Menu & Pricing</span>
+            <ArrowRight className="w-4 h-4 text-[#FAF7F2] shrink-0" />
           </a>
         </motion.div>
 
